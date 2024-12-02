@@ -46,9 +46,9 @@ form.addEventListener("submit", (event) =>{
 function isEmailValid(email){
 
     //cria uma regex para validar e-mail
-    const emailRegex = new RegExp( //RegExp?????????????????????????????????????????
+    const emailRegex = new RegExp( 
         // exemplo de email: usuario12@host.com.br
-        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/  //pq usou\?????????????
+        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/  // a barra antes do ponto signiofica que o ponto é ponto mesmo, não outro caractere
     );
     if(emailRegex.test(email)){
         return true;
@@ -65,3 +65,7 @@ function validatePassword(password, minDigits){
     //senha inválida
     return false
 }
+
+
+
+
